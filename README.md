@@ -1,4 +1,6 @@
-Java web application require a web container, such as Tomcat ([Homepage](http://tomcat.apache.org/)), on which these can run.  Installing and configure a web container on each developing machine may be time consuming.  Furthermore, other developers need to manage the dependencies manually if they want to run the web application.
+Java web application require a web container, such as Tomcat ([Homepage](http://tomcat.apache.org/)), on which these can run.
+Installing and configure a web container on each developing machine may be time consuming.
+Furthermore, other developers need to manage the dependencies manually if they want to run the web application.
 
 Maven has a tomcat plugin that allows us to run an embedded tomcat instance without the need of installing a local tomcat server.
 
@@ -12,7 +14,8 @@ Maven has a tomcat plugin that allows us to run an embedded tomcat instance with
 
 Please note that this example makes use version 7 of Tomcat.  Please update where necessary if using another version of Tomcat.
 
-Most of the examples will not contain the whole code and may omit fragments which are not relevant to the example being discussed. The readers can download or view all code from [https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven](https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven).
+Most of the examples will not contain the whole code and may omit fragments which are not relevant to the example being discussed.
+The readers can download or view all code from [https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven](https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven).
 
 Include the Tomcat Maven Plugin as shown in the following POM example.
 
@@ -238,9 +241,10 @@ Mar 20, 2014 4:00:07 PM org.apache.coyote.AbstractProtocol start
 INFO: Starting ProtocolHandler ["http-bio-9090"]
 ```
 
-Please note that when executed for the first time, Maven may download any missing components and thus may produce more output than that shown above.
+Please note that when executed for the first time, Maven may download any missing components and thus may produce more
+output than that shown above.
 
-Open the browser.
+Open the [browser](http://localhost:9090/hello).
 
 ```
 http://localhost:9090/hello
@@ -250,4 +254,5 @@ You should see something similar to the following
 
 ![Embedded Tomcat](img/Embedded-Tomcat.png)
 
-We managed to run a Java web application without having to install a web server such as Tomcat.  The reader can checkout the project as [https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven](https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven).
+We managed to run a Java web application without having to install a web server such as Tomcat. The reader can checkout 
+the project as [https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven](https://github.com/javacreed/how-to-run-embedded-tomcat-with-maven).
